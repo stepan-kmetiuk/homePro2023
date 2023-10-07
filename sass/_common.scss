@@ -1,0 +1,129 @@
+// titles h
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  line-height: glh(64, 76);
+  font-size: 64px;
+
+  // @include fz(64px, 54px, 44px, 32px, 30px, 'font-size');
+
+
+  @include media-breakpoint-down(lg) {
+    font-size: responsive(lg, 64px);
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: responsive(md, 64px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: responsive(sm, 64px);
+  }
+
+}
+
+h2 {
+  color: var(--titles-color);
+  font-weight: 700;
+  line-height: glh(52, 64);
+  @include fz(52px, 38px, 32px, 28px, 24px, 'font-size');
+}
+
+h3 {
+  color: var(--titles-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: glh(24, 32);
+
+  @include fz(24px, 22px, 20px, 18px, null, 'font-size');
+}
+
+h4 {
+  color: var(--titles-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: glh(32, 40);
+}
+
+h5 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: glh(24, 32);
+
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+  }
+}
+
+// button
+
+.btn-call {
+  display: flex;
+
+  a {
+    background: var(--blue-color);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3333333333;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 60px;
+    padding-left: 23px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      gap: 12px;
+    }
+
+    div {
+      transition: 0.3s ease 0s;
+    }
+
+    span {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease 0s;
+
+      @include media-breakpoint-down(sm) {
+        width: 32px;
+        height: 32px;
+      }
+
+      i {
+        color: var(--blue-color);
+      }
+    }
+
+    &:hover {
+
+      div {
+        transform: translateX(40%);
+      }
+
+      span {
+        transform: translateX(-340%);
+
+        @include media-breakpoint-down(sm) {
+          transform: translateX(-390%);
+
+        }
+      }
+    }
+  }
+}

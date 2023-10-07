@@ -1,0 +1,28 @@
+@keyframes fixedHeader {
+	from {
+		top: -100%
+	}
+
+	to {
+		top: 0
+	}
+}
+
+.header {
+
+	&_fixed {
+		min-height: 40px;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		right: 0;
+
+		background-color: var(--main-secondary);
+
+		animation-name: fixedHeader;
+		animation-duration: .5s;
+		animation-fill-mode: both;
+
+		z-index: 101;
+	}
+}

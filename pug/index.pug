@@ -1,0 +1,434 @@
+extends layout/layout
+append config
+  - var pageTitle = 'Hero';
+
+block main
+  include includes/header
+
+  .wrapper
+    //- section hero
+    section.hero.section-1
+      .hero__wrapper
+        .hero__decor-left
+          <svg height="45" viewBox="0 0 479 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M433.92 5.87463C429.555 2.086 423.969 1.52588e-05 418.189 1.52588e-05H-2.5V45H479L433.92 5.87463Z" fill="white"/>
+          </svg>
+        .hero__decor-right
+          <svg height="45" viewBox="0 0 484 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45.0801 5.87458C49.4453 2.08596 55.0312 -2.6145e-05 60.8113 -2.56397e-05L485 1.52588e-05L485 45L0 45L45.0801 5.87458Z" fill="white"/>
+          </svg>
+        .hero__inner
+          .hero__photo-ibg.hero__photo-ibg_left
+            img(src="../img/hero/hero-img-left.jpg", alt="hero-img-employee")
+          .hero__content
+            .hero__content-top
+              .hero__service
+                ul
+                  li Maintenances
+                  li Repairs
+                  li Improvements
+              .hero__title(data-aos='fade-up')
+                h1 Need improvement or repair your home? we can help!
+              .hero__quotes
+                div(data-aos-delay="50", data-aos="fade-right") Free  Quotes
+                  i.icon-check
+                div(data-aos-delay="100", data-aos="fade-left") 100%  Commitment-Free
+                  i.icon-check
+              .hero__tel-btn.btn-call(data-aos-delay="200", data-aos="fade-up")
+                a(href="#")
+                  div.
+                    Call Us Now
+                  span
+                    i.icon-tell
+            .hero__content-bottom
+              .hero__advantages
+                .hero__item
+                  .hero__block-icon
+                    img(src="../img/hero/icons/vector-hero1.svg", alt="icon-check")
+                  .hero__block-text.
+                    Satisfaction Guarantee
+                .hero__item
+                  .hero__block-icon
+                    img(src="../img/hero/icons/vector-hero2.svg", alt="icon-clock")
+                  .hero__block-text.
+                    24H Availability
+                .hero__item
+                  .hero__block-icon
+                    img(src="../img/hero/icons/vector-hero3.svg", alt="icon-local")
+                  .hero__block-text.
+                    Local US Professional
+                .hero__item
+                  .hero__block-icon
+                    img(src="../img/hero/icons/vector-hero4.svg", alt="icon-flexible")
+                  .hero__block-text.
+                    Flexible Appointments
+          .hero__photo-ibg.hero__photo-ibg_rigth
+            img(src="../img/hero/hero-img-right.jpg", alt="hero-img-employee")
+    //- section about
+    section.about#about
+      .container
+        .about__inner
+          .about__servise
+            .about__text(data-aos="fade-up")
+              h2 Professional for your home services
+              p(data-aos-delay="50" data-aos="fade-up").
+                You need help for home care? We are home care professionals focused in the US region. We provide several services that support home services
+            .about__advantages
+              ul
+                li(data-aos-delay="100" data-aos="fade-up")
+                  i.icon-check
+                  | Repair and Installation
+                li(data-aos-delay="150" data-aos="fade-up")
+                  i.icon-check
+                  | Maintenance
+                li(data-aos-delay="200" data-aos="fade-up")
+                  i.icon-check
+                  | Home Security Services
+              ul
+                li(data-aos-delay="250" data-aos="fade-up")
+                  i.icon-check
+                  | Plumbing
+                li(data-aos-delay="300" data-aos="fade-up")
+                  i.icon-check
+                  | Budget-friendly
+                li(data-aos-delay="350" data-aos="fade-up")
+                  i.icon-check
+                  | Eco-friendly solutions
+            .about__notice
+              p
+                | We already 24 hours fast services to help you. You can contact us at <a href="tel:8886175894">(888)617-5894</a>
+          .about__photo
+            img(src="../img/about/Image-works.png", alt="img-works")
+    //- section services
+    section.services#services
+      .container
+        .services__inner
+          .services__titles
+            h2 Our Services
+            p.
+              You have problems with leaking pipes, broken tiles, lost keys or want to tidy up the trees around you, of course you need our help!
+          .services__our
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-1.svg", alt="icon")
+              .services__col-text
+                h3 Plumbing services
+                p.
+                  Drain pipe leaking, pipe clogged, replace the pipe line
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-2.svg", alt="icon")
+              .services__col-text
+                h3 Roofing repair
+                p.
+                  Roof leaks, tile replacement, roof cleaning and maintenance
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-3.svg", alt="icon")
+              .services__col-text
+                h3 Mold Removal
+                p.
+                  Removing and cleaning mildew, Restoration and Prevention
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-4.svg", alt="icon")
+              .services__col-text
+                h3 Tree Trimming
+                p.
+                  Trimming and cleaning, Deadwood removal, Tree shaping
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-5.svg", alt="icon")
+              .services__col-text
+                h3 Appliance Repair
+                p.
+                  repair of washing machines, refrigerators, Air conditioner, etc
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-6.svg", alt="icon")
+              .services__col-text
+                h3 Bathroom Remodeling
+                p.
+                  Design and Consulting, installation, Repairing, tile repair
+            .services__col(data-aos="zoom-in")
+              .services__col-icon
+                img(src="../img/services/icon-7.svg", alt="icon")
+              .services__col-text
+                h3 Locksmith
+                p.
+                  Lock Installation and Repair, Duplication, Lock Rekeying
+            .services__ask(data-aos="zoom-in")
+              .services__ask-text
+                div More service?
+                p.
+                  You can tell us what you need and we can help!
+              .services__ask-btn
+                a(href="#") Call Us Now
+    //- section garant
+    section.garant
+      .garant__bg
+        .container
+          .garant__inner
+            .garant__title
+              h2 Fast, Friendly, and Satisfaction Guarantee
+              p.
+                No matter how big or small your work is, whether it's for the interior or exterior of your home, we are ready to serve and help you solve your home problems.
+            .garant__advantages.advantages
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-1.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 Satisfaction Guarantee
+                  p.
+                    you don't need to worry about scams or our performance results. our company has
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-2.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 Free Quotes
+                  p.
+                    Get personalized cost estimates without any obligation. Experience transparency and peace of mind as you explore our service.
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-3.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 Local Professionals
+                  p.
+                    Our services cover the Nationwide, US area, including urban, suburban, and rural locations for both long and short term maintenance
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-4.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 Fast 24-Hour Service
+                  p.
+                    need fast handling for repairs to drains, leaks or something else? Our experts are available anytime to help you solve the problem
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-5.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 Flexible Appointments
+                  p.
+                    We offer convenient appointment times that can accommodate your busy schedule, day or night, 7 days a week.
+              .advantages__describe
+                .advantages__icon
+                  img(src="../img/garant/garant-icon-6.svg", alt="icon-guarantee")
+                .advantages__text
+                  h3 100% Commitment-Free
+                  p.
+                    You are free to ask us about the problems you are facing. We offer a no-commitment approach to put your mind at ease
+    //- section garant
+    section.works
+      .container
+        .works__inner
+          .works__photo-ibg
+            img(src="../img/works/men-works.png", alt="works-man")
+          .works__items
+            .works__headline
+              h2 How HomePro <br> works?
+            .works__item
+              ol
+                li
+                  div
+                    h3 Call us anytime 24/7
+                  p.
+                    You can contact us directly, we will quickly put you in touch with our home care professionals who are ready anytime
+                li
+                  div
+                    h3 Schedule <br> Service
+                  p.
+                    After connecting your call, our home care experts will answer your questions and provide flexible appointment times
+                li
+                  div
+                    h3 Your request is complated
+                  p.
+                    Once your technician arrives, he will diagnose the problem and provide an estimate. If you decide to continue, the technician will get to work
+    //- section reviews
+    section.reviews
+      .container
+        .reviews__inner
+          .reviews__title
+            h2 Here our original reviews from trusted platform
+          .reviews__swiper.swiper
+            .reviews__wrapper.swiper-wrapper
+              .reviews__slides.swiper-slide.slide
+                .slide__img
+                  img(src="../img/rewiews/star.png", alt="star-png-baner")
+                .slide__text
+                  p.
+                    Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                .slide__rating
+                  .slide__rating-img
+                    img(src="../img/rewiews/user-rating.jpg", alt="user-img")
+                  .slide__rating-stars.rating
+                    h3 Kende Attila
+                    .rating
+                      .my-rating
+              .reviews__slides.swiper-slide.slide
+                .slide__img
+                  img(src="../img/rewiews/star.png", alt="star-png-baner")
+                .slide__text
+                  p.
+                    Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                .slide__rating
+                  .slide__rating-img
+                    img(src="../img/rewiews/user-rating.jpg", alt="user-img")
+                  .slide__rating-stars.rating
+                    h3 Kende Attila
+                    .rating
+                      .my-rating
+              .reviews__slides.swiper-slide.slide
+                .slide__img
+                  img(src="../img/rewiews/star.png", alt="star-png-baner")
+                .slide__text
+                  p.
+                    Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
+                .slide__rating
+                  .slide__rating-img
+                    img(src="../img/rewiews/user-rating.jpg", alt="user-img")
+                  .slide__rating-stars.rating
+                    h3 Kende Attila
+                    .rating
+                      .my-rating
+            .swiper-pagination
+          .button-next.icon-arrow-left2
+          .button-prev.icon-arrow-right2
+            //- .swiper-scrollbar
+    //- section blog
+    section.blog#blog
+      .container
+        .blog__inner
+          .blog__titles
+            h2 Explore Insights in Our Blog
+            p.
+              Find lots of insights and information on our blog. Explore, learn, and get inspired today.
+          .blog__cards.card
+            .card__row.row
+              .col-12.col-md-6.col-lg-4
+                .card__wrap
+                  a.card__photo-ibg(href="#!")
+                    img(src="../img/blog/card-1.jpg", alt="card-tel-img")
+                  .card__content
+                    .card__data
+                      span 19 Jan 2023
+                    .card__link
+                      a(href="#!").
+                        Understanding Smart Home Systems & Maintenance
+                    .card__text
+                      p.
+                        Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions.Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions.
+                      <button class="button-see-more" type="button">...</button>
+                  .card__tegs
+                    a(href="#!") blumbit
+                    a(href="#!") Architecture
+                    a(href="#!") Maintenance
+              .col-12.col-md-6.col-lg-4
+                .card__wrap
+                  a.card__photo-ibg(href="#!")
+                    img(src="../img/blog/card-2.jpg", alt="card-tel-img")
+                  .card__content
+                    .card__data
+                      span 19 Jan 2023
+                    .card__link
+                      a(href="#!").
+                        The Ultimate Guide to Home Repairs and Renovations
+                    .card__text
+                      p.
+                        Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions.
+                  .card__tegs
+                    a(href="#") blumbit
+                    a(href="#") Architecture
+                    a(href="#") Maintenance
+              .col-12.col-md-8.col-lg-4
+                .card__wrap
+                  a.card__photo-ibg(href="#!")
+                    img(src="../img/blog/card-3.jpg", alt="card-tel-img")
+                  .card__content
+                    .card__data
+                      span 19 Jan 2023
+                    .card__link
+                      a(href="#!").
+                        Painting Techniques for a Kitchen Refresh
+                    .card__text
+                      p.
+                        Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions.
+                  .card__tegs
+                    a(href="#") blumbit
+                    a(href="#") Architecture
+                    a(href="#") Maintenance
+          .blog__btn
+            a(href="#!").
+              View More
+              <i class="icon-arrow-down"></i>
+    //- section questions
+    section.questions
+      .container
+        .questions__inner
+          .questions__text
+            .questions__title
+              h2 Frequently Asked Questions
+            .questions__link
+              span Still need help?
+              a(href="#!") Get Help Now
+          .questions__acordion.accordion
+            .accordion__box
+              .accordion__title
+                h3 What is HomePro?
+                img(src="../img/ico-moon/arrow-down.svg", alt="Arrow")
+              .accordion__content
+                p HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+            .accordion__box
+              .accordion__title
+                h3 Are the service providers on HomePro reliable and qualified?
+                img.arrow(src="../img/ico-moon/arrow-down.svg", alt="Arrow")
+              .accordion__content
+                p HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+            .accordion__box
+              .accordion__title
+                h3 What if I have an issue or complaint about a service provider?
+                img.arrow(src="../img/ico-moon/arrow-down.svg", alt="Arrow")
+              .accordion__content
+                p HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+            .accordion__box
+              .accordion__title
+                h3 How are payments handled on HomePro?
+                img.arrow(src="../img/ico-moon/arrow-down.svg", alt="Arrow")
+              .accordion__content
+                p HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+            .accordion__box
+              .accordion__title
+                h3 How do I leave a review for a service provider?
+                img.arrow(src="../img/ico-moon/arrow-down.svg", alt="Arrow")
+              .accordion__content
+                p HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+    //- section banner
+    section.banner
+      .banner__decor
+        img(src="../img/banner/decor-white.svg", alt="decor-white")
+      .banner__container
+        .banner__text
+          .banner__text-title
+            h6 Already to improve or repair your home? Let’s Talk!
+          .banner__text-free
+            div
+              i.icon-check
+              span Free  Quotes
+            div
+              i.icon-check
+              span 100%  Commitment-Free
+          .banner__btn.btn-call
+            a(href="#")
+              div.
+                Call Us Now
+              span
+                i.icon-tell
+        .banner__photo
+          picture
+            source(media='(min-width: 374.9px)' srcset='../img/banner/banner-men.png')
+            img(src='../img/banner/banner-man-sm.png' alt="reklama-men")
+
+  include includes/footer.pug
+
+  //- include includes/button-menu.pug
+
+
+

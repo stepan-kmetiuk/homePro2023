@@ -1,0 +1,121 @@
+@keyframes spinAround{from{transform:rotate(0)}to{transform:rotate(359deg)}}
+ 
+.dc-btn {
+  display: inline-flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+ 
+  vertical-align: middle;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+  background-color: transparent;
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid transparent;
+  outline: 0;
+ 
+  &_primary {
+    color: #fff;
+    background-color: $primary_color;
+    border-color: $primary_color;
+    transition: all .2s ease;
+    &:hover {
+      background-color: darken($primary_color, 5);
+      border-color: darken($primary_color, 5);
+    }
+  }
+ 
+  &_secondary {
+    color: #fff;
+    background-color: $secondary_color;
+    border-color: $secondary_color;
+    transition: all .2s ease;
+    &:hover {
+      background-color: darken($secondary_color, 5);
+      border-color: darken($secondary_color, 5);
+    }
+  }
+ 
+  &_outline-primary {
+    border-color: $primary_color;
+    color: $primary_color;
+    transition: all .2s ease;
+    &:hover {
+      background-color: $primary_color;
+      color: #fff;
+    }
+  }
+ 
+  &_outline-secondary {
+    border-color: $secondary_color;
+    color: $secondary_color;
+    transition: all .2s ease;
+    &:hover {
+      background-color: $secondary_color;
+      color: #fff;
+    }
+  }
+ 
+  &_gradient {
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    background-color: #3f70d5;
+    background-image: linear-gradient(to right, #3f70d5 0%, #7fbc51 100%);
+    background-repeat: repeat-y;
+    background-position: 150px 0;
+    transition: background-position .2s ease;
+    &:hover {
+      background-position: 0px 0;
+    }
+  }
+ 
+  &_loading {
+    color: transparent !important;
+    &:after {
+      animation: spinAround .5s infinite linear;
+      border: 3px solid #dbdbdb;
+      border-radius: 290486px;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      content: "";
+      display: block;
+      height: 16px;
+      position: relative;
+      width: 16px;
+ 
+      position: absolute;
+      left: calc(50% - (16px / 2));
+      top: calc(50% - (16px / 2));
+      position: absolute!important;
+    }
+  }
+ 
+  &:disabled {
+    background-color: #ddd !important;
+    border-color: #ddd !important;
+    cursor: default !important;
+    box-shadow: none !important;
+  }
+  &_lg {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  &_sm {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  &_block {
+    display: flex;
+    width: 100%;
+  }
+}

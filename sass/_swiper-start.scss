@@ -1,0 +1,179 @@
+/* ============== 1 вариант SWIPER ============== */
+.reviews__swiper {
+  display: flex;
+  max-width: 728px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Кнопки вперед и назад */
+.button-prev,
+.button-next {
+  cursor: pointer;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  @include media-breakpoint-down(md) {
+    top: 95%;
+  }
+
+  &::before {
+    content: "\ea40";
+    color: #fff;
+  }
+}
+
+.button-prev {
+  left: 10%;
+
+  @include media-breakpoint-down(lg) {
+    left: 20px;
+  }
+}
+
+.button-next {
+  right: 10%;
+
+  @include media-breakpoint-down(lg) {
+    right: 20px;
+  }
+
+  &::before {
+    content: "\ea40";
+    transform: rotate(180deg);
+  }
+}
+
+
+.swiper-button-disabled {
+  background: #e3e6f0;
+}
+
+// .btn-prev::after,
+// .btn-next::after {
+//   color: #bb8c5f;
+//   font-size: 30px;
+// }
+
+/* Пагинация (точки) */
+.swiper-pagination {}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #E3E6F0;
+  transition: 0.4s ease 0s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 12px;
+  border-radius: 24px;
+  background-color: var(--blue-color);
+}
+
+
+/* ============== 2 вариант SWIPER ============== */
+// .inner {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   max-width: 1180px;
+//   width: 100%;
+//   height: auto;
+//   margin: 50px auto;
+//   position: relative;
+// }
+
+// .gallary {
+//   display: flex;
+//   max-width: 1180px;
+//   width: 100%;
+//   height: auto;
+//   overflow: hidden;
+// }
+
+// .gallary .swiper-wrapper {
+//   box-sizing: content-box;
+// }
+
+// .foto-slide {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: auto;
+//   height: auto;
+// }
+
+// .foto-slide img {
+//   max-width: 100%;
+//   width: auto;
+//   height: auto;
+//   max-height: 380px;
+// }
+
+// .btn-next,
+// .btn-prev {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-50%);
+//   width: 40px;
+//   height: 20px;
+//   z-index: 10;
+//   border-radius: 5px;
+//   color: white;
+//   background-color: black;
+//   cursor: pointer;
+// }
+
+// .btn-next {
+//   right: -65px;
+// }
+
+// .btn-prev {
+//   left: -25px;
+// }
+
+// @media (max-width: 1250px) {
+
+//   .inner,
+//   .gallary {
+//     max-width: 780px;
+//   }
+// }
+
+// @media (max-width: 950px) {
+
+//   .inner,
+//   .gallary {
+//     max-width: 320px;
+//   }
+// }

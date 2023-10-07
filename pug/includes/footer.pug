@@ -1,0 +1,50 @@
+//- begin footer
+footer.footer#footer
+    .footer__container
+      .footer__subscription
+        .footer__subscription-text
+          div Stay Connected with Our Newsletter
+          p.
+            Subscribe to our newsletter to get more news, promo, or news services
+        form#myForm.footer__form(action='files/sendmail/sendmail.php' method='POST')
+          input#email(type='text' name='form[email]' data-error='Error' placeholder='Enter email address')
+          button.button(type='submit') Subscribe
+          #error-message.error-message
+      .footer__row
+        .footer__col
+          a#logo-footer.footer__col-img(href="!#")
+            img(src="img/footer/footer-logo.svg", alt="footer-logo")
+          .footer__col-text
+            p.
+              Home Pro is your premier destination for top-notch smart home service and repair.
+          .footer__col-social
+            a.icon-you-tube(href="#/")
+            a.icon-instagram(href="#/")
+            a.icon-facebook(href="#/")
+            a.icon-twitter(href="#/")
+            a.icon-massage(href="#/")
+        .footer__col
+          h5 Company
+          ul
+            li
+              a(href="#/") About us
+            li
+              a(href="#/") Services
+            li
+              a(href="#/") Our Blog
+            li
+              a(href="#/") Contact
+        .footer__col
+          h5 Legal
+          ul
+            li
+              a(href="#/") Terms
+            li
+              a(href="#/") Privacy
+            li
+              a(href="#/") Cookies
+            li
+              a(href="#/") License
+    .footer__copyright
+      span ©2023 HomePro . All rights reserved
+//- end footer
